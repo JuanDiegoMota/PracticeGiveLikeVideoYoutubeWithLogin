@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="15379" started-at="2017-03-10T15:57:52Z" finished-at="2017-03-10T15:58:08Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="15379" started-at="2017-03-10T15:57:52Z" finished-at="2017-03-10T15:58:08Z">
+      <class name="Tests.AppTest">
+        <test-method status="PASS" signature="navigate(java.lang.String)[pri:0, instance:Tests.AppTest@53ce1329]" name="navigate" is-config="true" duration-ms="3781" started-at="2017-03-10T10:57:52Z" finished-at="2017-03-10T10:57:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.youtube.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigate -->
+        <test-method status="PASS" signature="LoginSuccedfull(java.lang.String, java.lang.String)[pri:0, instance:Tests.AppTest@53ce1329]" name="LoginSuccedfull" duration-ms="3352" started-at="2017-03-10T10:57:56Z" finished-at="2017-03-10T10:57:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[taeautomationuser@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[usuario123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginSuccedfull -->
+        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:Tests.AppTest@53ce1329]" name="OnFailure" is-config="true" duration-ms="1" started-at="2017-03-10T10:57:59Z" finished-at="2017-03-10T10:57:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginSuccedfull status=SUCCESS method=AppTest.LoginSuccedfull(java.lang.String, java.lang.String)[pri:0, instance:Tests.AppTest@53ce1329] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OnFailure -->
+        <test-method status="PASS" signature="searchVideo(java.lang.String)[pri:0, instance:Tests.AppTest@53ce1329]" name="searchVideo" duration-ms="8221" started-at="2017-03-10T10:57:59Z" depends-on-methods="Tests.AppTest.LoginSuccedfull" finished-at="2017-03-10T10:58:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mana]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchVideo -->
+        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:Tests.AppTest@53ce1329]" name="OnFailure" is-config="true" duration-ms="1" started-at="2017-03-10T10:58:08Z" finished-at="2017-03-10T10:58:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchVideo status=SUCCESS method=AppTest.searchVideo(java.lang.String)[pri:0, instance:Tests.AppTest@53ce1329] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OnFailure -->
+      </class> <!-- Tests.AppTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="nameBrowser" value="firefox" />
+	<parameter name="url" value="https://www.youtube.com" />
+	<parameter name="email" value="taeautomationuser@gmail.com" />
+	<parameter name="password" value="usuario123456" />
+	<parameter name="video" value="mana" />
+  <test name="Test">
+  <classes>
+  	<class name="Tests.AppTest"></class>
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
