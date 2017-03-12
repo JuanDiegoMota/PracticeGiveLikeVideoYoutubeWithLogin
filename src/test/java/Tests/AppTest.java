@@ -1,5 +1,6 @@
 package Tests;
 
+import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
@@ -11,8 +12,8 @@ import Pages.PrincipalPage;
 import Pages.ResultsVideoPage;
 import Pages.SearchVideoPage;
 import Pages.VideoLikePage;
-import Utils.Const;
-import junit.framework.Assert;
+
+
 
 public class AppTest extends BaseTest {
 	private LoginPage objLogin;
@@ -49,12 +50,12 @@ public class AppTest extends BaseTest {
 
 	
 	@Test(dependsOnMethods={"LoginSuccedfull"})
-	@Parameters({"video"})
-	public void searchVideo(@Optional("la gota fria") String video){
-		objSearchVideo.searchVideo(video);
-		objResultVideo.selectVideo();
+	@Parameters({"artistName","soundtrack"})
+	public void searchVideo(@Optional("Guns N' Roses") String artistName, @Optional("Guns N' Roses - Paradise City") String soundtrack){
+		objSearchVideo.searchVideo(artistName);
+		objResultVideo.selectVideo(soundtrack);
 		objLikePage.GiveLikeToVideo();
-		Assert.assertEquals(Const.titleVideo, driver.getTitle());
+		Assert.assertNotNull(objLikePage);
 	}
 	
 }

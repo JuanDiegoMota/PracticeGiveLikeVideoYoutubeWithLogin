@@ -19,7 +19,7 @@ import org.testng.annotations.AfterSuite;
 
 import Utils.Const;
 
-public class BaseTest {
+public abstract class BaseTest {
 	protected WebDriver driver;
 	
 	
@@ -89,11 +89,8 @@ public class BaseTest {
 		}
 	}
 	
-/*	@AfterSuite
+	@AfterSuite
 	public void executeCloseWebDriver(){
 		closeWebDriver(driver);
-	} */
-	
-	
-	
+	} 
 }

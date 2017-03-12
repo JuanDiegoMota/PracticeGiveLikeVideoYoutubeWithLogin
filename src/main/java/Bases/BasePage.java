@@ -6,7 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import Utils.Wait;
 
-public class BasePage {
+public abstract class BasePage {
 	protected WebDriver driver;
 	Wait myWait;
 	
@@ -19,12 +19,12 @@ public class BasePage {
 	}
 	
 	protected void OnClick(WebElement element){
-		myWait.explicitWait(element);
+		myWait.FluentWait(element);
 		element.click();
 	}
 	
 	protected void setText(WebElement element, String text){
-		myWait.explicitWait(element);
+		myWait.FluentWait(element);
 		element.sendKeys(text);
 	}
 }

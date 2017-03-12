@@ -8,7 +8,7 @@ import Bases.BasePage;
 
 public class VideoLikePage extends BasePage {
 		
-	@FindBy(xpath=".//*[@id='watch8-sentiment-actions']/span/span[1]")
+	@FindBy(xpath=".//*[@id='watch-header']/div[3]/div[2]/span/span[1]/button")
 	WebElement likeButton;
 	
 	public VideoLikePage(WebDriver driver){
@@ -16,7 +16,6 @@ public class VideoLikePage extends BasePage {
 	}
 	
 	public void GiveLikeToVideo(){
-		
 		OnClick(likeButton);
 	}
 }

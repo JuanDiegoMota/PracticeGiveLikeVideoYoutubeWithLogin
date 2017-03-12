@@ -5,7 +5,8 @@
 	<parameter name="url" value="https://www.youtube.com" />
 	<parameter name="email" value="taeautomationuser@gmail.com" />
 	<parameter name="password" value="usuario123456" />
-	<parameter name="video" value="mana" />
+	<parameter name="artistName" value="mana" />
+	<parameter name="soundtrack" value="Maná - Mariposa traicionera (Video)" />
   <test name="Test">
   <classes>
   	<class name="Tests.AppTest"></class>
